@@ -11,6 +11,7 @@
     <modules>
         <module>godzila-core</module>
         <module>godzila-clients</module>
+        <module>godzila-connectors</module>
     </modules>
 
     <repositories>
@@ -122,6 +123,8 @@
         <!-- Shade Package Start -->
         <chunjun.shade.package>com.dtstack.chunjun.shade</chunjun.shade.package>
         <!-- Shade Package End -->
+
+        <dist.dir>godzila-dist</dist.dir>
     </properties>
 
     <dependencies>
