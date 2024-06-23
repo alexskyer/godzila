@@ -12,6 +12,7 @@
         <module>godzila-core</module>
         <module>godzila-clients</module>
         <module>godzila-connectors</module>
+        <module>godzila-connectors/godzila-connector-dm</module>
     </modules>
 
     <repositories>
