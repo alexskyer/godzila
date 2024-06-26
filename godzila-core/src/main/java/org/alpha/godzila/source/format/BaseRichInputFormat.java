@@ -59,7 +59,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * ChunJun里面所有自定义inputFormat的抽象基类
+ * 所有自定义inputFormat的抽象基类
  *
  * <p>扩展了org.apache.flink.api.common.io.RichInputFormat, 因而可以通过{@link
  * #getRuntimeContext()}获取运行时执行上下文 自动完成 用户只需覆盖openInternal,closeInternal等方法, 无需操心细节

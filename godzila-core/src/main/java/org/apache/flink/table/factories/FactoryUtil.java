@@ -129,7 +129,7 @@ public final class FactoryUtil {
     public static final String PLACEHOLDER_SYMBOL = "#";
 
     private static final Logger LOG = LoggerFactory.getLogger(FactoryUtil.class);
-    private static final String CHUNJUN_FACTORY_IDENTIFIER_SUFFIX = "-x";
+    private static final String GODZILA_FACTORY_IDENTIFIER_SUFFIX = "-x";
     private static final ThreadLocal<org.alpha.godzila.util.FactoryHelper>
             factoryHelperThreadLocal = new ThreadLocal<>();
 
@@ -532,7 +532,7 @@ public final class FactoryUtil {
             ClassLoader classLoader, Class<T> factoryClass, String factoryIdentifier) {
 
         boolean isEndWithX =
-                factoryIdentifier.toLowerCase().endsWith(CHUNJUN_FACTORY_IDENTIFIER_SUFFIX);
+                factoryIdentifier.toLowerCase().endsWith(GODZILA_FACTORY_IDENTIFIER_SUFFIX);
         String unconvertedFactoryIdentifier =
                 isEndWithX
                         ? factoryIdentifier.substring(0, factoryIdentifier.length() - 2)
@@ -574,7 +574,7 @@ public final class FactoryUtil {
                 ConnectorNameConvertUtil.convertPluginName(unconvertedFactoryIdentifier);
         convertedIdentifier =
                 isEndWithX
-                        ? convertedIdentifier + CHUNJUN_FACTORY_IDENTIFIER_SUFFIX
+                        ? convertedIdentifier + GODZILA_FACTORY_IDENTIFIER_SUFFIX
                         : convertedIdentifier;
 
         String finalConvertedIdentifier = convertedIdentifier;

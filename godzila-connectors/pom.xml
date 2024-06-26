@@ -14,6 +14,8 @@
     <modules>
         <module>godzila-connector-jdbc-base</module>
         <module>godzila-connector-ftp</module>
+        <module>godzila-connector-dm</module>
+        <module>godzila-connector-stream</module>
     </modules>
 
     <properties>

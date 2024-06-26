@@ -49,7 +49,7 @@ public class DataSyncFactoryUtil {
     private static final String DEFAULT_DIRTY_TYPE = "default";
 
     private static final String DEFAULT_DIRTY_CLASS =
-            "com.dtstack.chunjun.dirty.consumer.DefaultDirtyDataCollector";
+            "org.alpha.godzila.dirty.consumer.DefaultDirtyDataCollector";
 
     public static SourceFactory discoverSource(SyncConfig config, StreamExecutionEnvironment env) {
         try {
